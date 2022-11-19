@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="home">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+  <header class="container primary-header flex">
+    <div>
+      <a href="#"><img src="assets/images/logo.svg" alt="newspage logo"></a>
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only"
+        aria-expanded="false">Menu</span></button>
+    <nav>
+      <ul class="primary-navigation flex" data-visible="false">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <main class="main-content">
+      <div class="flow">
+        <div class="main-content--image">
+          <picture>
+            <source media="(min-width: 45rem)" srcset="assets/images/image-web-3-desktop.jpg" alt="desctop image">
+            <img src="assets/images/image-web-3-mobile.jpg" alt="mobile image" aria-hidden="true">
+          </picture>
+        </div>
+
+        <div class="main-content--text">
+          <div>
+            <h1 class="text-dark-blue fs-500 fw-800">The Bright Future of Web 3.0?</h1>
+          </div>
+          <div>
+            <p class="line-height-1">We dive into the next evolution of the web that claims to put the power of the
+              platforms
+              back into the hands of the
+              people. But is it really fulfilling its promise?</p>
+            <div>
+              <button class="fs-100 bg-red button text-white button">
+                READ MORE
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div>
+      <aside class="aside bg-dark-blue flow">
+        <h2 class="text-orange fw-700">
+          New
+        </h2>
+        <article class="flow">
+          <a href="#" class="text-white fw-700 aside-title">Hydrogen VS Electric Cars</a>
+          <p class="aside-paragraph line-height-1">
+            Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </article>
+        <article class="flow">
+          <a href="#" class="text-white fw-700 aside-title">The Downsides of AI Artistry</a>
+          <p class="aside-paragraph line-height-1">What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </article>
+        <article class="flow">
+          <a href="#" class="text-white fw-700 aside-title">Is VC Funding Drying Up?</a>
+          <p class="aside-paragraph line-height-1">Prate funding by VC firms is down 50% YOY. We take a look at what
+            that
+            means.</p>
+        </article>
+      </aside>
+    </div>
+  </div>
+
+
+
+  <footer class="container">
+    <section class="flex">
+      <div class="сard flex">
+        <div class="card-image">
+          <img src="assets/images/image-retro-pcs.jpg" alt="retro PC">
+        </div>
+        <div class="card-content1 jc-sb">
+          <span class="text-gr-blue fs-400 fw-700">01</span>
+          <h4><a class="text-dark-blue fs-300 fw-800" href="#">Reviving Retro PCs</a></h4>
+          <p class="line-height-1">What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+      <div class="сard flex">
+        <div class="card-image">
+          <img src="assets/images/image-top-laptops.jpg" alt="top 10 laptops">
+        </div>
+        <div class="card-content2 jc-sb">
+          <span class="text-gr-blue fs-400 fw-700">02</span>
+          <h4><a href="#" class="text-dark-blue fs-300 fw-800">Top 10 Laptops of 2022</a></h4>
+          <p class="line-height-1 ">Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+      <div class="сard flex">
+        <div class="card-image">
+          <img src="assets/images/image-gaming-growth.jpg" alt="gaming growth">
+        </div>
+        <div class="card-content3 jc-sb">
+          <span class="text-gr-blue fs-400 fw-700">03</span>
+          <h4><a class="text-dark-blue fs-300 fw-800" href="#">The Growth of Gaming</a></h4>
+          <p class="line-height-1">How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+
+
+  <div class="attribution" style="text-align: center">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">NurkhatOR</a>.
+  </div>
+</body>
+<script src="main.js"></script>
+
+</html>
